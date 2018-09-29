@@ -12,7 +12,7 @@ body{
 	margin:0;
 	font-family:'Courier', 'sans-serif';
 	text-align:center;
-	background-color: var(--colorgray);
+	background-color:#ddd;
 	max-width:99vw;
 }
 /*###### TITLE-LOGO NAVBAR  #######*/
@@ -24,7 +24,10 @@ header{
 	top:-1em;
 }
 img.logo{
+	position: absolute;
 	width:4rem;
+	left:1em;
+	top:.5em;
 	height:auto;
 	opacity:0.7;
 	border-radius: .2rem;
@@ -34,7 +37,9 @@ img.logo{
 img{
 max-width: 99vw;
 }
-
+nav{
+	padding-top:2em;
+}
 nav li{
 	display: inline-block;
 	list-style: none;
@@ -43,11 +48,12 @@ nav li{
 nav a{
 	background-color:var(--colorgray);
 	display: inline-block;
+	padding:.5em;
 	font-weight: 900;
 	font-size: .7rem;
 	text-decoration: none;
 	text-transform: uppercase;
-	border-radius:10%;
+	border-radius:.4em;
 	color:var(--colorgreen);
 	border:1px solid var(--colorskyblue);
 	text-shadow: 1px 1px 3px var(--colorblue);
@@ -103,18 +109,26 @@ nav a:hover{
 			margin-top:4em;
 		}
 		img.logo{
-			float:left;
-			margin:2em 0em 2em 5em;
+			left:.5em;
+			top:.5em;
+			margin:2em 0em 1em 5em;
 			width:20rem;
 		}
 		nav{
-			float:right;
-			margin:3em 5em 2em 0em;
-			letter-spacing: .4em;
+			position:absolute;
+			top:3em;
+			right:3em;
+			letter-spacing: .1em;
+		}
+		ul{
+			padding: 0;
+			margin: 0;
 		}
 		nav a{
 			font-size:1em;
-			padding: .6em 1em;
+			padding: .6em .7em;
+			margin:0 1em;
+			color:var(--colorred);
 		}
 		
 		.home-hero{
@@ -223,12 +237,17 @@ figure.port-item{
 	position:relative;
 	margin:0;
 }
+.port-item:hover .port-description{
+	bottom:1em;
+}
 figure.port-item img{
 	display:block; /*or a thin line stay on the bottom of every img*/
+	width:100%;
+	height:100%;
 }
 figcaption.port-description{
 	position:absolute; /*ABSOLUTE NEEDS DIMENTION AND DIRECTIONS*/
-	bottom:1em;
+	bottom:-8em;
 	left:2em;
 	right:2em;
 	width:70%;
@@ -236,7 +255,8 @@ figcaption.port-description{
 	color:white;
 	background:rgba(0,0,0,.75);
 	padding:0 1em 1em 1em;
-	border-radius: .5em
+	border-radius: .5em;
+	transition: bottom .5s;
 }
 figcaption a.button-small{
 	color:var(--colorskyblue);
@@ -266,7 +286,7 @@ figcaption p{
 	}
 	
 	figure.port-item img{
-	max-height:50vh;
+	/*max-height:50vh;*/
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
@@ -332,6 +352,8 @@ footer{
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	background-color: #333;
+	color:#aaa;
 }
 footer .list{
 	width:100%;
