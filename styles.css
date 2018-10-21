@@ -45,6 +45,9 @@ nav li{
 	list-style: none;
 	margin:.3rem;
 }
+li.skew{
+	color: orange;
+}
 nav a{
 	background-color:var(--colorgray);
 	display: inline-block;
@@ -66,11 +69,11 @@ nav a:hover{
 }
 		
 		/*######  HEADER  #######*/
-.home-hero{
+.home-home{
 	padding:1em;
 	background-size: cover;
 }
-.home-hero h1{
+.home-home h1{
 	text-shadow: 0px 0px 2px var(--colorred); 
 	color:var(--colorskyblue);
 	margin:4em auto 2em auto;
@@ -84,7 +87,7 @@ nav a:hover{
 	display: block;
 }
 		/*######  BUTTON-HEADER  #######*/
-.home-hero a{
+.home-home a{
 	position: relative;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -131,11 +134,11 @@ nav a:hover{
 			color:var(--colorred);
 		}
 		
-		.home-hero{
+		.home-home{
 			padding:1em 0 8em 0;
 		}
 
-		.home-hero a { 
+		.home-home a { 
 			position:absolute;
 			margin-top:-1em;
 			top:auto;
@@ -144,7 +147,7 @@ nav a:hover{
 			z-index: 2;
 			
 		}
-		.home-hero a:before{
+		.home-home a:before{
 			content:'see our work';
 			padding-top:1em;
 			text-align: bottom;
@@ -161,7 +164,7 @@ nav a:hover{
 			z-index: 1;
 			transition: left .5s;
 		}
-		.home-hero a:hover:before{
+		.home-home a:hover:before{
 			left:-1em;
 			z-index: 1;
 		}
@@ -205,7 +208,7 @@ nav a:hover{
 		/*left:50%;
 		transform:translateX(-50%);*/
 		z-index: 2;
-		box-shadow: 0px 0px 10px 5px var(--colorgray); 
+		box-shadow: 0px 0px 10px 5px rgba(0,0,0,.2)
 		
 	}
 	.home-about-textbox{
