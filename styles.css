@@ -10,7 +10,7 @@ html{
 }
 body{
 	margin:0;
-	font-family:'Courier', 'sans-serif';
+	font-family:'consolas','Courier', 'sans-serif';
 	text-align:center;
 	background-color:#ddd;
 	max-width:99vw;
@@ -75,16 +75,10 @@ nav a:hover{
 }
 .home-home h1{
 	text-shadow: 0px 0px 2px var(--colorred); 
-	color:var(--colorskyblue);
-	margin:4em auto 2em auto;
-	letter-spacing: .2rem;
-	font-family:sans-serif;
-}
-
-.first-title span{
-	font-size:.8em;
-	font-weight: 300;
-	display: block;
+	color: white;margin: 4em auto 2em auto;
+    margin-top: 4em;letter-spacing: .2rem;font-family: Century Gothic, CenturyGothic, AppleGothic;
+	mix-blend-mode: exclusion;
+	font-size:5vw;
 }
 		/*######  BUTTON-HEADER  #######*/
 .home-home a{
@@ -108,30 +102,52 @@ nav a:hover{
 	@media (min-width:60rem){
 
 		h1.first-title{
-			font-size:3.5em;
-			margin-top:4em;
+			font-size:6vw;
+			margin-top:2.5em;
+			font-weight: bolder;
+ 		   	letter-spacing: .1em;
+   			word-spacing: 1rem;
 		}
 		img.logo{
 			left:.5em;
 			top:.5em;
 			margin:2em 0em 1em 5em;
-			width:20rem;
+			width:15rem;
 		}
 		nav{
 			position:absolute;
 			top:3em;
-			right:3em;
+			right:4em;
 			letter-spacing: .1em;
 		}
 		ul{
 			padding: 0;
 			margin: 0;
 		}
-		nav a{
-			font-size:1em;
-			padding: .6em .7em;
-			margin:0 1em;
-			color:var(--colorred);
+		li.skew{
+			transform: skewX(30deg);
+			padding: .5em 2em;
+			margin:0 2em;
+			background:linear-gradient(to right, #bbf, #99d );
+			display: inline-block;
+			padding:1em;
+			text-transform: uppercase;
+			border-radius:.4em;
+			color:var(--colorgreen);
+			text-shadow: 1px 1px 2px rgba(9,9,9,.2);
+			box-shadow: 2px -2px 5px 1px rgba(9,9,9,.3);
+		}
+
+		nav li.skew > a{
+			transform: skewX(-30deg);
+			margin:0;padding:0;
+			background: transparent;
+			box-shadow: none;
+			border: none;
+			display: block;
+			font-size:1.2rem;
+			color:orange;
+			opacity: .9;
 		}
 		
 		.home-home{
