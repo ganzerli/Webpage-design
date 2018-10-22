@@ -12,7 +12,7 @@ body{
 	margin:0;
 	font-family:'consolas','Courier', 'sans-serif';
 	text-align:center;
-	background-color:#ddd;
+	background: radial-gradient(ellipse at center, rgba(131,234,174,.6) 0%,rgba(145,232,66,.7) 100%); 
 	max-width:99vw;
 }
 /*###### TITLE-LOGO NAVBAR  #######*/
@@ -126,11 +126,10 @@ nav a:hover{
 		}
 		li.skew{
 			transform: skewX(30deg);
-			padding: .5em 2em;
 			margin:0 2em;
-			background:linear-gradient(to right, #bbf, #99d );
+			background: linear-gradient(253deg, rgba(102,210,249,.6) 0%,rgba(102,210,249,.7) 0%,rgba(255,239,183,.6) 32%,rgba(102,210,249,.7) 51%,rgba(255,239,183,.6) 78%,rgba(255,239,183,.6) 100%);
 			display: inline-block;
-			padding:1em;
+			padding:.8em 2em;
 			text-transform: uppercase;
 			border-radius:.4em;
 			color:var(--colorgreen);
