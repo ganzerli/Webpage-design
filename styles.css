@@ -212,6 +212,12 @@ nav a:hover{
 	background-image: url(imgs/backgr-1.jpg);
 }
 
+	
+h2.destinations{
+	color:rgba(100,250,250,1);
+	mix-blend-mode: difference;
+}
+
 @media (min-width:60rem){   /*########  HWO WE ARE MEDIA QUERY  #########*/
 	.home-about{
 		position:relative;
@@ -244,6 +250,26 @@ nav a:hover{
 
 	.home-about-textbox h2{
 		top:1.5em;
+	}
+
+	h2.destinations{
+		font-size:3rem;
+		letter-spacing:.1em;
+		word-spacing: .3em;
+	}
+
+	h2.destinations #o1{
+		text-shadow: -1.5em -1em 3px red,
+		             -4px -5px 2px #666,
+		             1px 1px 1px #fff;
+	}
+	h2.destinations #t2{
+		text-shadow: 1em -1.3em 3px green,
+		            1px -3px 2px #666;
+	}
+	h2.destinations #t3{
+		text-shadow: 4em -1em 2px blue,
+		            5px -3px 2px #666;	
 	}
 }
 
