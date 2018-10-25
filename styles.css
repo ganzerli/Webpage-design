@@ -400,6 +400,10 @@ footer{
 	justify-content: space-around;
 	background-color: #333;
 	color:#aaa;
+	padding:1rem 0;
+}
+footer span{
+color:#fff;
 }
 footer .list{
 	width:100%;
@@ -409,6 +413,9 @@ footer .list{
 footer li{
 	list-style: none;
 	margin-left:-2em;
+}
+footer li:nth-child(1){
+color:var(--colorred);
 }
 /* ### # ##  ##  FOOTER  BIG SCREEN ###  ## ## */
  
