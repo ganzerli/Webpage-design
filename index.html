@@ -17,12 +17,14 @@
 		
 		.home-home{
 			background:url(imgs/backgr-1.jpg) #D6AD97 no-repeat center;
-			background-size: 99.9%;
+			background-size: 100%;
 
 		}
 		.home-about{
 			background:url(imgs/portfolio-8.jpg) #D6AD97 no-repeat center center;
 			background-size: 100%;
+			opacity:0;
+			animation:animfade 2s ease-in 1s forwards ;
 		}
 		
 		@media(max-width:60rem){ /*when screen smaller than 60rem*/
@@ -34,10 +36,19 @@
 		h1.first-title{
 			font-family: 'Caveat Brush', cursive !important;
 		}
+		#anim{
+			animation: animfade 2s linear forwards;
+		}
+		@keyframes animfade {
+ 		0%{opacity:0;}
+ 		100%{opacity:1;}
+ 		}
 
 	</style>
 </head>
 <body>
+
+<div id="anim">
 
 	<header>
 		<img src="imgs/logo.jpg" alt="super logo" class="logo"/>
@@ -70,7 +81,9 @@ Lot consectetur adipiscing elit metus leo penatibus, nec vehicula fames urna ege
 			</p>
 		</div>
 	</section>
-	
+</div>
+
+
 	<h2 class="destinations">
 		<span id="o1">OUR</span>
 		<span id="t2"> BEST</span>

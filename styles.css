@@ -20,6 +20,8 @@ body{
 	overflow-x: hidden;
 	font-family: Bowlby One SC !important;
 }
+
+
 /*###### TITLE-LOGO NAVBAR  #######*/
 header{
 	margin-top:1em;
@@ -27,6 +29,10 @@ header{
 	left:0;
 	right:0;
 	top:-1em;
+}
+a{
+	text-decoration: none;
+	color:none;
 }
 img.logo{
 	position: absolute;
@@ -177,6 +183,7 @@ h1.first-title{
 		
 		.home-home{
 			padding:1em 0 8em 0;
+
 		}
 
 		.home-home a{
@@ -485,8 +492,6 @@ color:var(--colorred);
  	footer .list{
  		width:60%;
  	}
- 	
- 		
-
- 	}
  }
+
+ 
