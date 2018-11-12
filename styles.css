@@ -2,11 +2,13 @@
 *{box-sizing: border-box;}  /*// padding is not add at the dimension of the onject*/ 
 
 html{
-	--colorblue:#1d53af;
-	--colorskyblue:#179bc6;
-	--colorred:#ff411c;
-	--colorgreen:#a0c623;
+	--colorblue:#375e97;
+	--colorskyblue:#4cb5f5;
+	--colorred:#cb0000;
+	--colorgreen:#b3de81;
 	--colorgray:#c1c1c1;
+	--sunrise:#ffccbb;
+	--colororange:#ff8d3f;
 }
 body{
 	margin:0;
@@ -16,6 +18,7 @@ body{
 	max-width:100vw;
 	color:#333;
 	overflow-x: hidden;
+	font-family: Bowlby One SC !important;
 }
 /*###### TITLE-LOGO NAVBAR  #######*/
 header{
@@ -35,34 +38,34 @@ img.logo{
 	border-radius: .2rem;
 	margin:0;
 	padding:0;
+	display:none;
 }
 img{
-max-width: 99vw;
+max-width: 100vw;
 }
 nav{
 	padding-top:2em;
 	transform:rotate(-1deg);
+	display:none;
 }
 nav li{
 	display: inline-block;
 	list-style: none;
 	margin:.3rem;
 }
-li.skew{
-	color: orange;
-}
+
 nav a{
-	background-color:rgba(100,100,100,.6);
+	background-color:var(--colorskyblue);
 	display: inline-block;
-	padding:.5em;
+	padding:1vmax;
+	margin:1.5vw;
+	color: var(--colorred);
 	font-weight: 900;
 	font-size: .7rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	border-radius:.4em;
-	color:var(--colorgreen);
-	border:1px solid var(--colorskyblue);
-	text-shadow: 1px 1px 3px var(--colorblue);
+	text-shadow: 1px 1px 3px var(--colorskyblue);
 	box-shadow: 0px 0px 3px var(--colorskyblue);
 	transition: all .3s;
 	border-top:-.5em;
@@ -71,25 +74,25 @@ nav ul{
 	margin-top: -.5em;
 }
 nav a:hover{
-	
-	color:orange;
+	color:var(--colororange);
 }
-		h1.first-title{
-			font-family: Bowlby One SC !important;
-		}
+h1.first-title{
+		font-family: Bowlby One SC !important;
+	}
 		
 		/*######  HEADER  #######*/
 .home-home{
 	padding:1em;
 	background-size: cover;
+	height:100vh;
 }
 .home-home h1{
 	color: white;
-	margin: 4em auto 2em auto;
-    margin-top: 4em;
+	margin: 2rem auto;
     letter-spacing: .2rem; 
+    line-height: 2;
 	mix-blend-mode:difference;
-	font-size:5vw;
+	font-size:10vmax;
 	text-shadow: 0px 0px 2px var(--colorred); 
 }
 		/*######  BUTTON-HEADER  #######*/
@@ -97,10 +100,10 @@ nav a:hover{
 	position: relative;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: .8em 1em;
+	padding: .7em .9em;
 	margin-bottom:.5em;
-	color:orange;
-	/*border: 1px solid var(--colorskyblue); */
+	color:var(--colororange);
+	text-shadow: 0 0 2px var(--colorblue);
 	font-weight:900;
 	box-shadow: 0px 0px 3px var(--colorskyblue);
 	border-radius: .4rem;
@@ -118,7 +121,7 @@ nav a:hover{
 
 		h1.first-title{
 			font-size:10vmax;
-			margin-top:1.2em;
+			margin-top:.7em;
 			margin-bottom:.5em;
 			font-weight: bolder;
 			line-height:1em;
@@ -139,8 +142,8 @@ nav a:hover{
 		}
 		nav{
 			position:absolute;
-			top:3em;
-			right:4em;
+			top:1em;
+			right:5em;
 			letter-spacing: .1em;
 		}
 		ul{
@@ -215,19 +218,20 @@ nav a:hover{
 		/*########  HWO WE ARE  #########*/
 .home-about-textbox{
 	background-color:var(--colorblue);
-	color:var(--colorgray);
+	color:lightgrey;
 	padding:2em;
-	outline:2px solid var(--colorskyblue); /*outline has also offset, margin not*/
+	outline:2px solid var(--colorblue); /*outline has also offset, margin not*/
 	outline-offset:-1.6em;
 	position:relative;
-	opacity: .9;
+	
 
 }
 .home-about-textbox h2{
-	color:var(--colorgreen);
+	color:var(--colororange);
 	position:absolute;
+	width:70%;
 	margin-top:-1em;
-	background: var(--colorskyblue);
+	background: var(--colorblue);
 	border-radius: 3px;
 	padding:.1em;
 	transform:translateX(-50%);
@@ -235,14 +239,14 @@ nav a:hover{
 	font-size: 1.3em
 }
 
-.home-about{
-	background-image: url(imgs/backgr-1.jpg);
-}
+
 
 	
 h2.destinations{
-	color:rgba(100,250,250,1);
+	color:blue;
 	mix-blend-mode: difference;
+	margin:0;
+	padding-top: .5em;
 }
 
 @media (min-width:60rem){   /*########  HWO WE ARE MEDIA QUERY  #########*/
@@ -262,7 +266,8 @@ h2.destinations{
 	}
 	.home-about-textbox{
 		border-radius: 3px;
-		color:blue;
+		color:lightgrey;
+		text-shadow: 0 0 3px rgba(0,0,0,.6);
 		max-width:25em;
 		padding:4em;
 		position:absolute;
@@ -316,6 +321,9 @@ h2.destinations{
 
 .portfolio{
 	margin:0;
+	width: 99.1vw;
+	background: black;
+	box-shadow: 0 0 5px 3px rgba(0,0,0,.5);
 }
 figure.port-item{
 	position:relative;
@@ -348,6 +356,7 @@ figcaption a.button-small{
 	text-transform:capitalize;
 	padding:.5em;
 	border:2px solid var(--colorskyblue);
+	border-radius:3px;
 }
 figcaption p{
 	color:var(--colorgreen);
@@ -360,7 +369,6 @@ figcaption p{
 		display:flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		width:100%;
 		position:relative;
 		overflow:hidden;
 	}
@@ -384,11 +392,12 @@ section.pre-footer{
 	padding:3rem 2rem;
 	position:relative;
 	background-color:var(--colorgreen);
-	font-weight: 300;
 	text-transform: capitalize;
 	position:relative;
 	color:var(--colorblue);
 	text-shadow: 0px 0px 3px var(--colorskyblue);
+	box-shadow: 0 0 6px 8px var(--colorgreen);
+	font-family: Bowlby One SC !important;
 }
 section.pre-footer h3{
 	font-size: 1.7rem;
@@ -406,6 +415,8 @@ section.pre-footer h4{
 	color:var(--colorred);
 	border:2px solid var(--colorskyblue);
 	box-shadow: 0 0 10px rgba(0,0,0,.5);
+	border-radius: 4px;
+	font-weight: bold;
 }
 
 @media (min-width: 60em){
@@ -424,6 +435,7 @@ section.pre-footer h4{
 	.pre-footer a.button-prefooter{
 		width:12em;
 		padding:.8em 3em;
+		transition:all .5s ease-out;
 	}
 	.pre-footer a.button-prefooter:hover{
 		box-shadow: 0 0 10px rgba(0,0,0,.5);
