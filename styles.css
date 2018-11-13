@@ -308,19 +308,19 @@ h2.destinations{
 	}
 
 	h2.destinations #o1{
-		text-shadow:  -2px -2px 2px #fff,
-		             -15px -15px 2px #666,
-		             -.7em -.6em 4px red;
+		text-shadow:  -3px -3px 2px #fff,
+		             -12px -13px 2px #666,
+		             -.5em -.4em 4px red;
 	}
 	h2.destinations #t2{
-		text-shadow:1px -2px 2px #fff,
-		            7px -12px 2px #666,
-		             .2em -.5em 4px darkgreen;
+		text-shadow:2px -3px 2px #fff,
+		            5px -12px 2px #666,
+		             .1em -.4em 4px darkgreen;
 	}
 	h2.destinations #t3{
-		text-shadow: 1px -2px 2px #fff,
-		            17px -16px 2px #666,
-		            .7em -.6em 4px blue;
+		text-shadow: 1px -3px 2px #fff,
+		            12px -13px 2px #666,
+		            .5em -.4em 4px blue;
 	}
 }
 
