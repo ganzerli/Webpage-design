@@ -13,38 +13,44 @@
 
 	<style type="text/css">
 
-		section{display:block;}
-		
-		.home-home{
-			background:url(imgs/backgr-1.jpg) #D6AD97 no-repeat center;
-			background-size: 100%;
+	section{display:block;}
 
-		}
-		.home-about{
+	.home-home{
+		background:url(imgs/backgr-1.jpg) #D6AD97 no-repeat center;
+		background-size: 100%;
+
+	}
+	.home-about{
+		background:url(imgs/portfolio-8.jpg) #D6AD97 no-repeat center center;
+		background-size: 100%;
+		opacity:0;
+		animation:animfade 1.5s ease-in 1s forwards ;
+	}
+
+	@media(max-width:60rem){ /*when screen smaller than 60rem*/
+		.home-home{
 			background:url(imgs/portfolio-8.jpg) #D6AD97 no-repeat center center;
-			background-size: 100%;
-			opacity:0;
-			animation:animfade 2s ease-in 1s forwards ;
+			background-size: cover;
 		}
-		
-		@media(max-width:60rem){ /*when screen smaller than 60rem*/
-			.home-home{
-				background:url(imgs/portfolio-8.jpg) #D6AD97 no-repeat center center;
-				background-size: cover;
-			}
-		}
-		h1.first-title{
-			font-family: 'Caveat Brush', cursive !important;
-		}
-		#anim{
-			animation: animfade 2s linear forwards;
-		}
-		@keyframes animfade {
- 		0%{opacity:0;}
- 		100%{opacity:1;}
- 		}
+	}
+	h1.first-title{
+		font-family: 'Caveat Brush', cursive !important;
+	}
+	#anim{
+		animation: animfade 2s linear forwards, comeDown .5s ease-out forwards;
+	}
+	
+	@keyframes animfade {
+		0%{opacity:0;}
+		100%{opacity:1;}
+	}
+	@keyframes comeDown {
+		0%{transform: translateY(-100%)}
+		100%{transform: translateY(0)}
+	}
 
 	</style>
+
 </head>
 <body>
 
