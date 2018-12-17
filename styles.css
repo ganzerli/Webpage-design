@@ -90,6 +90,13 @@ nav a:hover{
 		background-size: 100%;
 
 	}
+	.home-about{
+		background:url(imgs/portfolio-8.jpg) #D6AD97 no-repeat center center;
+		background-size: 100%;
+		opacity:0;
+		animation:animfade 1.5s ease-in 1s forwards ;
+	}
+	
 	@media(max-width:60rem){ /*when screen smaller than 60rem*/
 		.home-home{
 			background:url(imgs/portfolio-8.jpg) #D6AD97 no-repeat center center;
@@ -97,12 +104,7 @@ nav a:hover{
 		}
 	}
 
-	.home-about{
-		background:url(imgs/portfolio-8.jpg) #D6AD97 no-repeat center center;
-		background-size: 100%;
-		opacity:0;
-		animation:animfade 1.5s ease-in 1s forwards ;
-	}
+
 
 	h1.first-title{
 		font-family: 'Caveat Brush', cursive !important;
@@ -159,10 +161,9 @@ h1.first-title{
 	border-radius: .4rem;
 	z-index:3;
 	overflow:hidden;
-background: #ff6a00;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, rgba(255, 106, 0, 0.5), rgba(251, 84, 18, 0.5));  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, rgba(255, 106, 0, 0.5),rgba(251, 84, 18, 0.5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
-
+	background: #ff6a00;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, rgba(255, 106, 0, 0.5), rgba(251, 84, 18, 0.5));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, rgba(255, 106, 0, 0.5),rgba(251, 84, 18, 0.5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
 
 /*######  ######  MEDIA QUERY HEADER!!  #######   #######*/
 	
@@ -294,9 +295,7 @@ background: linear-gradient(to right, rgba(255, 106, 0, 0.5),rgba(251, 84, 18, 0
 }
 
 h2.destinations{
-	color:rgba(99,99,99,.4);
-	mix-blend-mode: difference;
-	-webkit- mix-blend-mode: difference;
+	color:rgba(99,150,99,.9);
 	margin:0;
 	padding-top: .5em;
 }
@@ -306,7 +305,7 @@ h2.destinations{
 		position:relative;
 		font-size:1rem;
 		max-width:95%;
-		background-image: url(imgs/backgr-1.jpg);
+		background-image: url(imgs/portfolio-8.jpg);
 		padding:12em;
 		top:-3em;
 		transform:rotate(1deg);
